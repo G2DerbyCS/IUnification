@@ -4,6 +4,9 @@ using System.ComponentModel;
 
 namespace IUnification.Models.Interfaces
 {
+    /// <summary>
+    /// An interface for use in creating media-providing plugins for the Unification media player.
+    /// </summary>
     public interface IUnificationPlugin
     {
         /// <summary>

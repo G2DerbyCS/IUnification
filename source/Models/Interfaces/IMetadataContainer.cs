@@ -3,17 +3,20 @@ using IUnification.Models.Enums;
 
 namespace IUnification.Models.Interfaces
 {
+    /// <summary>
+    /// An interface for use in representing a media file or stream's metadata.
+    /// </summary>
     public interface IMetadataContainer
     {
         /// <summary>
         /// Path/url to the file/stream.
         /// </summary>
-        Uri  Datasource { get; }
+        Uri Datasource { get; }
 
         /// <summary>
         /// Datasource url format type, e.g stream or file.
         /// </summary>
-        DatasourceFormat DatasourceFormat       { get; }
+        DatasourceFormat DatasourceFormat { get; }
 
         /// <summary>
         /// Returns the value of a metadata field.
