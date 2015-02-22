@@ -1,4 +1,5 @@
-﻿using System;
+﻿using IUnification.Models.Enums;
+using System;
 
 namespace IUnification.Models.Interfaces
 {
@@ -8,9 +9,9 @@ namespace IUnification.Models.Interfaces
     public interface ISecureUnificationPlugin : IUnificationPlugin
     {
         /// <summary>
-        /// Indicates if this ISecureUnificationPlugin instance has an authenticated user state.
+        /// Indicates the user authentication status of this IUnificationPlugin instance.
         /// </summary>
-        bool Authenticated { get; }
+        AuthenticationStatus AuthenticationStatus { get; }
 
         /// <summary>
         /// An array of the Feilds required for user authentication.
@@ -18,15 +19,15 @@ namespace IUnification.Models.Interfaces
         AuthenticationField[] AuthenticationFields { get; }
 
         /// <summary>
-        /// Event to be raised when the Authenticated variable state of this ISecureUnificationPlugin instance changes.
+        /// Event to be raised when the AuthenticationStatus variable of this ISecureUnificationPlugin instance changes.
         /// </summary>
-        event EventHandler<bool> AuthenticationStatusChangedEvent;
+        event EventHandler<AuthenticationStatus> AuthenticationStatusChangedEvent;
 
         /// <summary>
         /// Method to call when requesting server-side user authentication.
         /// </summary>
         /// <param name="FieldValues">Field values required for authentication.</param>
-        /// <returns>Success of authenticatio.</returns>
+        /// <returns>Outcome of user authentication attempt.</returns>
         bool AuthenticateUser(AuthenticationField[] FieldValues);
     }
 }

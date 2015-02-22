@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AuthenticationField.cs" />
+    <Compile Include="Models\Enums\AuthenticationStatusEnum.cs" />
     <Compile Include="Models\Enums\ConnectionStatusEnum.cs" />
     <Compile Include="Models\Enums\DatasourceFormatEnum.cs" />
     <Compile Include="Models\Interfaces\IMetadataContainer.cs" />
