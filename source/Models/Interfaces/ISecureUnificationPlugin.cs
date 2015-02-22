@@ -4,9 +4,9 @@ using System;
 namespace IUnification.Models.Interfaces
 {
     /// <summary>
-    /// An interface for use in implimenting a secure IUnificationPlugin.
+    /// An interface for use in implimenting an IUnificationPlugin that requires authentication.
     /// </summary>
-    public interface ISecureUnificationPlugin : IUnificationPlugin
+    public interface ISecureUnificationPlugin
     {
         /// <summary>
         /// Indicates the user authentication status of this IUnificationPlugin instance.
@@ -14,9 +14,9 @@ namespace IUnification.Models.Interfaces
         AuthenticationStatus AuthenticationStatus { get; }
 
         /// <summary>
-        /// An array of the Feilds required for user authentication.
+        /// An array of the InputFeilds required for user authentication.
         /// </summary>
-        AuthenticationField[] AuthenticationFields { get; }
+        InputField[] AuthenticationFields { get; }
 
         /// <summary>
         /// Event to be raised when the AuthenticationStatus variable of this ISecureUnificationPlugin instance changes.
@@ -28,6 +28,6 @@ namespace IUnification.Models.Interfaces
         /// </summary>
         /// <param name="FieldValues">Field values required for authentication.</param>
         /// <returns>Outcome of user authentication attempt.</returns>
-        bool AuthenticateUser(AuthenticationField[] FieldValues);
+        bool AuthenticateUser(InputField[] FieldValues);
     }
 }

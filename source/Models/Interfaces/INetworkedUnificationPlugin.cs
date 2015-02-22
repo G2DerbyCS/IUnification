@@ -6,7 +6,7 @@ namespace IUnification.Models.Interfaces
     /// <summary>
     /// An interface for use in implimentation of a Unification plugin with network dependancy.
     /// </summary>
-    public interface INetworkedUnificationPlugin : IUnificationPlugin
+    public interface INetworkedUnificationPlugin
     {
         /// <summary>
         /// Indicates this INetworkedUnificationPlugin instance's connection status.

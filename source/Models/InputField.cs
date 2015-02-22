@@ -1,12 +1,12 @@
 ﻿namespace IUnification.Models
 {
     /// <summary>
-    /// A class representitive of an authentication field.
+    /// A class representitive of an input field.
     /// </summary>
-    public class AuthenticationField
+    public class InputField
     {
         /// <summary>
-        /// Stores the value of this AuthenticationField instance.
+        /// Stores the value of this InputField instance.
         /// </summary>
         private string _Value;
 
@@ -15,7 +15,7 @@
         /// </summary>
         /// <param name="FieldName">Field Title/Name.</param>
         /// <param name="IsSensitive">Field sensitivity.</param>
-        internal AuthenticationField(string FieldName, bool IsSensitive)
+        public InputField(string FieldName, bool IsSensitive)
         {
             this.FieldName = FieldName;
             Sensitive      = IsSensitive;
@@ -40,7 +40,7 @@
         }
 
         /// <summary>
-        /// Indicates the value of this AuthenticationField instance.
+        /// Indicates the value of this InputField instance.
         /// </summary>
         public string Value
         {
