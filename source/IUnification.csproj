@@ -40,8 +40,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\AuthenticationField.cs" />
+    <Compile Include="Models\Enums\ConnectionStatusEnum.cs" />
     <Compile Include="Models\Enums\DatasourceFormatEnum.cs" />
     <Compile Include="Models\Interfaces\IMetadataContainer.cs" />
+    <Compile Include="Models\Interfaces\INetworkedUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\ISecureUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\IUnificationPlugin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
