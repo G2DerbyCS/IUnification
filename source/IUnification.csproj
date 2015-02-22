@@ -39,10 +39,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Enums\FieldTypeEnum.cs" />
+    <Compile Include="Models\PropertyContainer.cs" />
     <Compile Include="Models\InputField.cs" />
     <Compile Include="Models\Enums\AuthenticationStatusEnum.cs" />
     <Compile Include="Models\Enums\ConnectionStatusEnum.cs" />
     <Compile Include="Models\Enums\DatasourceFormatEnum.cs" />
+    <Compile Include="Models\Interfaces\IConfigurableUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\IMetadataContainer.cs" />
     <Compile Include="Models\Interfaces\INetworkedUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\ISecureUnificationPlugin.cs" />
