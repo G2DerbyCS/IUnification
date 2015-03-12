@@ -40,7 +40,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Enums\FieldTypeEnum.cs" />
+    <Compile Include="Models\Enums\LoadingStateEnum.cs" />
     <Compile Include="Models\Extensions.cs" />
+    <Compile Include="Models\LoadingCompletedEventArgs.cs" />
     <Compile Include="Models\PropertyContainer.cs" />
     <Compile Include="Models\InputField.cs" />
     <Compile Include="Models\Enums\AuthenticationStatusEnum.cs" />
@@ -51,6 +53,7 @@
     <Compile Include="Models\Interfaces\INetworkedUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\ISecureUnificationPlugin.cs" />
     <Compile Include="Models\Interfaces\IUnificationPlugin.cs" />
+    <Compile Include="Models\StateChangedEventArgs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
