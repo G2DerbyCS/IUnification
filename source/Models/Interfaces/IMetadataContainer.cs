@@ -19,6 +19,14 @@ namespace IUnification.Models.Interfaces
         DatasourceFormat DatasourceFormat { get; }
 
         /// <summary>
+        /// Duration of file/stream.
+        /// </summary>
+        /// <remarks>
+        /// If value returns zero stream will be considered to have an infinite duration.
+        /// </remarks>
+        TimeSpan Duration { get; }
+
+        /// <summary>
         /// Returns the value of a metadata field.
         /// </summary>
         /// <param name="MetadataField">The name of the Field value to be returned.</param>
