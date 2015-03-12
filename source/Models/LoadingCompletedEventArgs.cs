@@ -6,7 +6,7 @@ namespace IUnification.Models
     /// <summary>
     /// An EventArgs class for a loading type event.
     /// </summary>
-    internal class LoadingCompletedEventArgs : EventArgs
+    public class LoadingCompletedEventArgs : EventArgs
     {
         /// <summary>
         /// The LoadingState at which the load attempt ended.
