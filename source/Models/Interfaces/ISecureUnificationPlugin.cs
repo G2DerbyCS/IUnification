@@ -21,7 +21,7 @@ namespace IUnification.Models.Interfaces
         /// <summary>
         /// Event to be raised when the AuthenticationStatus variable of this ISecureUnificationPlugin instance changes.
         /// </summary>
-        event EventHandler<AuthenticationStatus> AuthenticationStatusChangedEvent;
+        event EventHandler<StateChangeEventArgs<AuthenticationStatus>> AuthenticationStatusChangedEvent;
 
         /// <summary>
         /// Method to call when requesting server-side user authentication.

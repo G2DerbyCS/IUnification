@@ -16,6 +16,6 @@ namespace IUnification.Models.Interfaces
         /// <summary>
         /// Event to be raised when the plugin to server connection status changes.
         /// </summary>
-        event EventHandler<ConnectionStatus> ConnectionStatusChangedEvent;
+        event EventHandler<StateChangeEventArgs<ConnectionStatus>> ConnectionStatusChangedEvent;
     }
 }
