@@ -1,4 +1,5 @@
 ﻿using IUnification.Models.Enums;
+using System;
 
 namespace IUnification.Models
 {
@@ -17,10 +18,12 @@ namespace IUnification.Models
         /// </summary>
         /// <param name="FieldName">Field Title/Name.</param>
         /// <param name="IsSensitive">Field sensitivity.</param>
-        public InputField(string FieldName, FieldType FieldType)
+        /// <param name="Value">Content of input field, will be empty if unset.</param>
+        public InputField(string FieldName, FieldType FieldType, String Value = @"")
         {
             this.FieldName = FieldName;
             this.FieldType = FieldType;
+            this.Value     = Value;
         }
 
         /// <summary>
@@ -51,22 +54,11 @@ namespace IUnification.Models
                 switch (FieldType)
                 {
                     case FieldType.Boolean:
-                        if (value.ToLowerInvariant().Equals("t") ||
-                            value.ToLowerInvariant().Equals("true"))
-                        {
-                            _Value = "true";
-                        }
-                        else
-                        {
-                            _Value = "false";
-                        }
-
+                        _Value = value.ToStringBoolean();
                         break;
 
-                    case FieldType.Sensitive:
-                    case FieldType.Standard:
+                    default:
                         _Value = value;
-
                         break;
                 }
             }

@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Models\Enums\FieldTypeEnum.cs" />
+    <Compile Include="Models\Extensions.cs" />
     <Compile Include="Models\PropertyContainer.cs" />
     <Compile Include="Models\InputField.cs" />
     <Compile Include="Models\Enums\AuthenticationStatusEnum.cs" />
