@@ -22,7 +22,7 @@ namespace IUnification.Models.Interfaces
         /// <summary>
         /// Event to be raised once the plugin has finished updating it's metadata collection.
         /// </summary>
-        event EventHandler<bool> MetadataCollectionUpdatedEvent;
+        event EventHandler<LoadingCompletedEventArgs> MetadataCollectionUpdatedEvent;
 
         /// <summary>
         /// Plugin Name/Title.
