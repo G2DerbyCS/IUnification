@@ -22,7 +22,7 @@ namespace IUnification.Models.Interfaces
         /// Duration of file/stream.
         /// </summary>
         /// <remarks>
-        /// If value returns zero stream will be considered to have an infinite duration.
+        /// If value returns negetive 1 (-1) stream will be considered to have an infinite duration.
         /// </remarks>
         TimeSpan Duration { get; }
 
