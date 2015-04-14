@@ -1,13 +1,12 @@
 ﻿using System;
 using IUnification.Models.Enums;
-using System.ComponentModel;
 
 namespace IUnification.Models.Interfaces
 {
     /// <summary>
     /// An interface for use in representing a media file or stream's metadata.
     /// </summary>
-    public interface IMetadataContainer : INotifyPropertyChanged
+    public interface IMetadataContainer
     {
         /// <summary>
         /// Path/url to the file/stream.
